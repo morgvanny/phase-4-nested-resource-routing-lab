@@ -88,7 +88,9 @@ This route should create a new item that belongs to a user.
 
 ```txt
 POST /users/:user_id/items
-
+# body only include item info other than user_id
+POST /items
+# body must also contain a user_id attribute
 Headers:
 -------
 Content-Type: application/json
